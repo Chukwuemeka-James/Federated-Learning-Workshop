@@ -32,12 +32,14 @@ Federated Learning Workshop/
 │   ├── client.py
 │   ├── server.py
 │   ├── centralised.py
-│   ├── requirements.txt
+|   ├── Pipefile
+|   |── Pipefile.lock
 |
 ├── Federated Learning TF/
 │   ├── client.py
 │   ├── server.py
-│   ├── requirements.txt
+│   ├── Pipefile
+|   |── Pipefile.lock
 ```
 
 ---
