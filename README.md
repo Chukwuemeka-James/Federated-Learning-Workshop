@@ -32,47 +32,55 @@ Federated Learning Workshop/
 │   ├── client.py
 │   ├── server.py
 │   ├── centralised.py
-|   ├── Pipefile
-|   |── Pipefile.lock
+│   ├── requirements.txt
 |
 ├── Federated Learning TF/
 │   ├── client.py
 │   ├── server.py
-│   ├── Pipefile
-|   |── Pipefile.lock
+│   ├── requirements.txt
 ```
 
 ---
 
 ## Setup Instructions
 
-We'll set up both environments separately using **virtual environments (venv)** for isolation and clarity.
+- We'll set up both environments separately using **virtual environments (venv)** for isolation and clarity.
+- To implement this project, you need to have **`pipenv`** installed, you can do that using:
+   ```bash
+   pip install pipenv
+   ```
+- You'll also need to install **`python_version = 3.12`**
 
 ---
 
 ### PyTorch Version Setup
 
-1. **Navigate to the PyTorch project folder:**
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Chukwuemeka-James/Federated-Learning-Workshop.git
+   ```
+
+2. **Navigate to the PyTorch project folder:**
    ```bash
    cd "Federated Learning Workshop/Federated Learning PT"
    ```
 
-2. **Create and activate a virtual environment:**
-   ```bash
-   pipenv install tensorflow flwr numpy
-   ```
-
-3. **Activate environment:**
+3.  **Creat and activate environment:**
    ```bash
    pipenv shell
    ```
 
-4. **Start the server (in a terminal):**
+4. **Install dependencies:**
+   ```bash
+   pipenv install
+   ```
+
+5. **Start the server (in a terminal):**
    ```bash
    python server.py
    ```
 
-5. **Start at least two clients (each in a separate terminal):**
+6. **Start at least two clients (each in a separate terminal):**
    ```bash
    python client.py
    ```
@@ -80,28 +88,32 @@ We'll set up both environments separately using **virtual environments (venv)** 
 ---
 
 ### TensorFlow Version Setup
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Chukwuemeka-James/Federated-Learning-Workshop.git
+   ```
 
-1. **Navigate to the TensorFlow project folder:**
+2. **Navigate to the TensorFlow project folder:**
    ```bash
    cd "Federated Learning Workshop/Federated Learning TF"
    ```
 
-2. **Create and activate a virtual environment:**
-   ```bash
-   pipenv install tensorflow flwr numpy
-   ```
-
-3. **Activate environment:**
+3.  **Creat and activate environment:**
    ```bash
    pipenv shell
    ```
 
-4. **Start the server (in a terminal):**
+4. **Install dependencies:**
+   ```bash
+   pipenv install
+   ```
+
+5. **Start the server (in a terminal):**
    ```bash
    python server.py
    ```
 
-5. **Start at least two clients (each in a separate terminal):**
+6. **Start at least two clients (each in a separate terminal):**
    ```bash
    python client.py
    ```
